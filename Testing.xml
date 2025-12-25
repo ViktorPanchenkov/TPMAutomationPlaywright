@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="All Regression tests" parallel="true" thread-count="2" configfailurepolicy="continue">
+    <test name="All Regression tests">
+        <parameter name="browzer" value="chrome"></parameter>
+
+        <classes>
+            <class name="Tests.LoginPageTest2"></class>
+        </classes>
+    </test>
+    <test name="CrossBrowzer">
+        <parameter name="browzer" value="firefox"></parameter>
+        <classes>
+
+        </classes>
+    </test>
+</suite>
